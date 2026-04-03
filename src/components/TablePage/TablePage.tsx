@@ -3,7 +3,7 @@ import { Loader } from '../Loader';
 import { getPeople } from '../../api';
 import { Person } from '../../types';
 import { useParams } from 'react-router-dom';
-import { TableForPage } from '../TableForPage';
+import { PeopleTable } from '../PeopleTable';
 
 export const TablePage = () => {
   const [people, setPeople] = useState<Person[]>([]);
@@ -46,7 +46,7 @@ export const TablePage = () => {
         )}
 
         {people.length > 0 && (
-          <TableForPage people={people} personId={personId} />
+          <PeopleTable people={people} personId={personId} />
         )}
       </div>
     </div>

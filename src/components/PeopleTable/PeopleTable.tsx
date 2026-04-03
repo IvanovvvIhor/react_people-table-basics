@@ -8,7 +8,7 @@ type Props = {
   personId?: string;
 };
 
-export const TableForPage: React.FC<Props> = ({ people, personId }) => {
+export const PeopleTable: React.FC<Props> = ({ people, personId }) => {
   return (
     <table
       data-cy="peopleTable"
