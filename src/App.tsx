@@ -43,9 +43,8 @@ export const App = () => (
         <Routes>
           <Route path="/" element={<h1 className="title">Home Page</h1>} />
           <Route path="/home" element={<Navigate to={'/'} replace={true} />} />
-          <Route path="/people" element={<TablePage />}>
-            <Route path=":personId" element={<TablePage />} />
-          </Route>
+          <Route path="/people" element={<TablePage />} />
+          <Route path="/people/:personId" element={<TablePage />} />
           <Route path="*" element={<h1 className="title">Page not found</h1>} />
         </Routes>
       </div>
